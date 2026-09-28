@@ -37,6 +37,6 @@ startGame.addEventListener("click", async () => {
   if (playersName.length < 2) {
     alert("يجب ان يكون عدد اللاعبين اكثر من 2");
   } else {
-    window.location.href = "/markap html/game.html";
+    window.location.href = "html/game.html";
   }
 });
