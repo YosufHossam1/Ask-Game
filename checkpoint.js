@@ -63,9 +63,9 @@ function SetHosts() {
 next.onclick = () => {
   console.log(randomHosts.length);
   if (randomHosts.length == 0) {
-    window.location.href = "leaderbord.html";
+    window.location.href = "/markap html/leaderbord.html";
   } else {
-    window.location.href = "game.html";
+    window.location.href = "/markap html/game.html";
   }
 };
 

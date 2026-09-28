@@ -173,7 +173,7 @@ function nextQ(hosts, guests) {
       );
       localStorage.setItem(`rounds`, JSON.stringify(rounds + 1));
 
-      window.location.href = "checkpoint.html";
+      window.location.href = "/markap html/checkpoint.html";
     }
   };
 }

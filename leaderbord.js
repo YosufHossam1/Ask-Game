@@ -74,5 +74,5 @@ function setNames(filtered) {
 let restart = document.querySelector(".restart");
 restart.onclick = () => {
   localStorage.clear();
-  window.location.href = "/index.html";
+  window.location.href = "index.html";
 };
