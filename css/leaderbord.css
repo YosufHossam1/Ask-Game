@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+    background-color: #ecf0f3;
+    background: linear-gradient(to bottom, #552a89, #5C6BC0);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container .title {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    >img {
+        margin-bottom: 30px;
+    }
+
+    span {
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: bolder;
+
+    }
+
+    h2 {
+        color: #FFFFFF;
+        font-size: 50px;
+        font-weight: bolder;
+        margin-bottom: 40px;
+    }
+}
+
+.container .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+
+    .card {
+        display: flex;
+        align-items: center;
+        background-color: rgba(40, 53, 147, 0.4);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 16px;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        overflow: hidden;
+        height: fit-content;
+        width: 100%;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+
+        h2 {
+            margin: 0 20px;
+            font-weight: bolder;
+        }
+
+        span {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: bolder;
+            margin-right: auto;
+        }
+    }
+}
+
+.container button {
+    background-color: #FFFFFF;
+    border: none;
+    color: #2196F3;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 80%;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}

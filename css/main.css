@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+    background-color: #ecf0f3;
+    background: linear-gradient(to bottom, #552a89, #5C6BC0);
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .title {
+    margin: 50px 30px 60px;
+
+    h2 {
+        color: #FFFFFF;
+        font-size: 28px;
+        font-weight: bolder;
+    }
+}
+
+.container .players {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 25px;
+
+
+    .player {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .image {
+            border-radius: 50%;
+            padding: 3px;
+            margin-bottom: 10px;
+            border: 3px solid transparent;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            img {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+            }
+        }
+
+        .name {
+
+            h3 {
+                color: #FFFFFF;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.active .image {
+    box-shadow: 0 0 15px 5px rgba(33, 150, 243, 0.8);
+    border-color: #2196F3;
+    transform: scale(1.05);
+    position: relative;
+
+
+}
+
+.active .image::before {
+    content: "";
+    background-image: url(/images/check.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-75%);
+    width: 30px;
+    height: 30px;
+}
+
+.unactive {
+    opacity: 0.5;
+}
+
+
+
+.container button {
+    background-color: #FFFFFF;
+    border: none;
+    color: #2196F3;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 80%;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}

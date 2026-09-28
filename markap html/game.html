@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/game.css">
+    <title>Friends Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <span>السوال <span class="question-number"></span> من <span class="total-questions">10</span></span>
+            <h2 class="question"></h2>
+        </div>
+        <div class="cards">
+            <div class="card" data-id="1">
+                <label for="input-1"> <span class="a-1"></span> <input type="radio" name="answer" id="input-1"></label>
+            </div>
+            <div class="card" data-id="2">
+                <label for="input-2"> <span class="a-2"></span> <input type="radio" name="answer" id="input-2"></label>
+            </div>
+            <div class="card" data-id="3">
+                <label for="input-3"> <span class="a-3"></span> <input type="radio" name="answer" id="input-3"></label>
+            </div>
+            <div class="card" data-id="4">
+                <label for="input-4"> <span class="a-4"></span> <input type="radio" name="answer" id="input-4"></label>
+            </div>
+        </div>
+        <button class="next-question">التالى</button>
+        <div class="nextPerson">
+            <span>الشخص هو : <span class="person-q"></span></span>
+            <span>حان دور : <span class="person-a">يوسف</span></span>
+            <img src="/images/scroll.png" alt="">
+            <button class="ready">أنا جاهز!</button>
+        </div>
+    </div>
+
+
+    <script src="/game.js"></script>
+</body>
+
+</html>
