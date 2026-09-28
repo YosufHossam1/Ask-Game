@@ -74,5 +74,5 @@ function setNames(filtered) {
 let restart = document.querySelector(".restart");
 restart.onclick = () => {
   localStorage.clear();
-  window.location.href = "/markap html/main.html";
+  window.location.href = "/markap html/index.html";
 };
