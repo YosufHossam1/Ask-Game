@@ -65,7 +65,7 @@ function setNames(hosts, guests) {
 
 // Get Data
 function getData(hosts) {
-  fetch(`jsons/${hosts[currentHost]}.json`)
+  fetch(`../jsons/${hosts[currentHost]}.json`)
     .then((res) => res.json())
     .then((data) => {
       currentData = data;
