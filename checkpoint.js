@@ -31,8 +31,7 @@ function sort(filtered) {
     let rank = document.createElement("img");
     rank.setAttribute("src", "../images/rank" + (i + 1) + ".png");
     let photo = document.createElement("img");
-    photo.setAttribute("src", `../images/${filtered[i].name}` + ".png");
-
+    photo.setAttribute("src", `../images/${filtered[i].name}.png`);
     let name = document.createElement("h2");
     name.textContent = filtered[i].name;
 

@@ -144,7 +144,7 @@ function nextQ(hosts, guests) {
       setNames(hosts, guests);
       reset();
     }
-    if (currentQ === 2) {
+    if (currentQ === currentData.length) {
       let playersScores = [
         { name: "Yosuf", score: Yosuf },
         { name: "Ekey", score: Ekey },
