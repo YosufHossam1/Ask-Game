@@ -81,7 +81,7 @@ body {
 
 .active .image::before {
     content: "";
-    background-image: url(../images/check.png);
+    background-image: url(images/check.png);
     background-size: cover;
     position: absolute;
     top: 0;
