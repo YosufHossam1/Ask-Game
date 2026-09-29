@@ -63,9 +63,9 @@ function SetHosts() {
 next.onclick = () => {
   console.log(randomHosts.length);
   if (randomHosts.length == 0) {
-    window.location.href = "../html/leaderbord.html";
+    window.location.href = "leaderbord.html";
   } else {
-    window.location.href = "../html/game.html";
+    window.location.href = "game.html";
   }
 };
 
@@ -73,36 +73,3 @@ let array = ["Yosuf", "Body", "Ekey", "AbdAllah", "Omar", "Eslam"];
 console.log(array);
 array.unshift("ss");
 console.log(array);
-/*
-
-"Yosuf","Omar","Body"]
-randomGuests	["Body","Omar"]
-currentHost	"Omar"
-
-shift
-    (6) [{…}, {…}, {…}, {…}, {…}, {…}]
-0
-:
-{name: 'Yosuf', score: 3, rank: 1}
-1
-:
-{name: 'Body', score: 2, rank: 2}
-2
-:
-{name: 'Ekey', score: 0, rank: 3}
-3
-:
-{name: 'AbdAllah', score: 0, rank: 4}
-4
-:
-{name: 'Omar', score: 0, rank: 5}
-5
-:
-{name: 'Eslam', score: 0, rank: 6}
-length
-:
-6
-[[Prototype]]
-:
-Array(0)
-  */

@@ -156,12 +156,6 @@ function nextQ(hosts, guests) {
 
       playersScores.sort((a, b) => b.score - a.score);
 
-      // let rank = 1;
-      // for (let i = 0; i < playersScores.length; i++) {
-      //   playersScores[i].rank = rank;
-      //   rank++;
-      // }
-
       playersScores.sort((a, b) => a.rank - b.rank);
 
       localStorage.setItem("currentHost", JSON.stringify(hosts[currentHost]));
@@ -173,51 +167,7 @@ function nextQ(hosts, guests) {
       );
       localStorage.setItem(`rounds`, JSON.stringify(rounds + 1));
 
-      window.location.href = "../html/checkpoint.html";
+      window.location.href = "checkpoint.html";
     }
   };
 }
-/*
-function nextQ(hosts, guest) {
-  nextQuestion.addEventListener("click", () => {
-    nextPerson.style.visibility = "visible";
-    setNames(hosts, guest);
-    if (choice === currentData[currentQ].correct) {
-      if (guest[currentGuest] === "Yosuf") {
-        Yosuf++;
-      } else if (guest[currentGuest] === "Ekey") {
-        Ekey++;
-      } else if (guest[currentGuest] === "AbdAllah") {
-        AbdAllah++;
-      } else if (guest[currentGuest] === "Omar") {
-        Omar++;
-      } else if (guest[currentGuest] === "Eslam") {
-        Eslam++;
-      } else if (guest[currentGuest] === "Body") {
-        Body++;
-      }
-      console.log(Yosuf, Ekey, AbdAllah, Omar, Eslam, Body);
-    }
-    currentGuest++;
-    // currentQ++;
-    if (currentQ < 10) {
-      getData(hosts);
-    } else {
-      localStorage.setItem("", JSON.stringify());
-    }
-  });
-}
-
-
-if (currentGuest < guests.length && currentQ < currentData.length - 1) {
-      currentQ++;
-      getData(hosts); // جلب السؤال التالي
-      setNames(hosts, guests); // تحديث الأسماء فورا للضيف الجديد
-      nextPerson.style.visibility = "visible"; // إظهار شاشة الانتقال بين الأدوار
-    } else {
-      console.log("Game Over / Round Finished");
-      localStorage.setItem("", JSON.stringify());
-      // هنا يمكنك الانتقال لصفحة النتائج
-    }
-
-*/
