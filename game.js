@@ -156,8 +156,6 @@ function nextQ(hosts, guests) {
 
       playersScores.sort((a, b) => b.score - a.score);
 
-      playersScores.sort((a, b) => a.rank - b.rank);
-
       localStorage.setItem("currentHost", JSON.stringify(hosts[currentHost]));
       localStorage.setItem("playersScores", JSON.stringify(playersScores));
       let rounds = JSON.parse(localStorage.getItem("rounds")) || 1;
