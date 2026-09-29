@@ -65,7 +65,7 @@ function setNames(hosts, guests) {
 
 // Get Data
 function getData(hosts) {
-  fetch(`/jsons/${hosts[currentHost]}.json`)
+  fetch(`jsons/${hosts[currentHost]}.json`)
     .then((res) => res.json())
     .then((data) => {
       currentData = data;
@@ -173,7 +173,7 @@ function nextQ(hosts, guests) {
       );
       localStorage.setItem(`rounds`, JSON.stringify(rounds + 1));
 
-      window.location.href = "/html/checkpoint.html";
+      window.location.href = "html/checkpoint.html";
     }
   };
 }
